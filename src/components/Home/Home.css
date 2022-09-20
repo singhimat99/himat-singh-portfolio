@@ -1,0 +1,19 @@
+.homepage {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(37, 43, 60, 0.7),
+      rgba(48, 50, 54, 0.7)
+    ),
+    url("../images/mountain_stars_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container {
+  width: 50%;
+}
+.my-face {
+  width: 100%;
+}
