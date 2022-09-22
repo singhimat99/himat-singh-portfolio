@@ -1,3 +1,82 @@
 .aboutpage {
-  height: 100vh;
+  min-height: 600px;
+}
+.about_content {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about_content-image {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_content-text {
+  margin: 2rem;
+  max-width: 650px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.image-of-himatsingh {
+  background-image: url("../images/my_face.jpg");
+  height: 350px;
+  width: 350px;
+  border-radius: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -140px;
+}
+.about_content-text-title {
+  height: 8rem;
+}
+.about_content-text-title h1 {
+  font-family: "M PLUS Code Latin", sans-serif;
+  font-size: 7rem;
+  color: rgba(198, 196, 196, 0.3);
+  letter-spacing: 5px;
+}
+.about_content-text-title h3 {
+  color: #444;
+  font-size: 2.5rem;
+  transform: translateY(-140%);
+  text-align: left;
+}
+.about_content-text-skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 2rem;
+}
+.single-skill {
+  width: fit-content;
+  padding: 0.8rem 1.3rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: black;
+  background-color: rgb(210, 210, 210);
+}
+@media (max-width: 900px) {
+  .about_content {
+    flex-direction: column;
+  }
+  .about_content-text-title h1 {
+    display: none;
+  }
+  .about_content-text-title h3 {
+    text-align: center;
+    font-size: 4rem;
+    transform: translateY(40%);
+  }
+  .about_content-image {
+    margin: 0;
+    margin-top: 2rem;
+  }
 }

@@ -20,18 +20,20 @@ export default function Navbar() {
         <Link
           to="home"
           smooth={true}
-          offset={200}
+          offset={-200}
           duration={500}
-          className="nav-item-link"
+          id="nav-item-link"
+          onClick={showNavbar}
         >
           HOME
         </Link>
         <Link
           to="about"
           smooth={true}
-          offset={200}
-          duration={500}
-          className="nav-item-link"
+          offset={-70}
+          duration={700}
+          id="nav-item-link"
+          onClick={showNavbar}
         >
           ABOUT
         </Link>
@@ -40,7 +42,8 @@ export default function Navbar() {
           smooth={true}
           offset={200}
           duration={500}
-          className="nav-item-link"
+          id="nav-item-link"
+          onClick={showNavbar}
         >
           PROJECTS
         </Link>
@@ -49,7 +52,8 @@ export default function Navbar() {
           smooth={true}
           offset={200}
           duration={500}
-          className="nav-item-link"
+          id="nav-item-link"
+          onClick={showNavbar}
         >
           CONTACT
         </Link>
