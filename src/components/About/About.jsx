@@ -13,7 +13,7 @@ export default function About() {
         </div>
         <div className="about_content-text">
           <div className="about_content-text-title">
-            <h1>{"<about>"}</h1>
+            <h1>{"<About/>"}</h1>
             <h3>Himat Singh</h3>
           </div>
           <p>
@@ -31,8 +31,12 @@ export default function About() {
           </p>
           {/* <h4>SKILLS</h4> */}
           <div className="about_content-text-skills">
-            {skills.map((skill) => {
-              return <div className="single-skill">{skill}</div>;
+            {skills.map((skill, i) => {
+              return (
+                <div className="single-skill" key={i}>
+                  {skill}
+                </div>
+              );
             })}
           </div>
         </div>
