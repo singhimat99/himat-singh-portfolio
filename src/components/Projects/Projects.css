@@ -15,17 +15,21 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 .projects_content-title h1 {
   font-family: "M PLUS Code Latin", sans-serif;
-  font-size: 9rem;
+  font-size: 7rem;
   color: rgba(198, 196, 196, 0.5);
   letter-spacing: 5px;
+  /* border: 2px solid red; */
+  margin-bottom: 1rem;
 }
-.projects_content-title p {
-  font-size: 3rem;
-  color: black;
-  transform: translateY(-150%);
+.projects_content-title h3 {
+  font-size: 2.5rem;
+  color: #444;
+  position: absolute;
+  bottom: 1rem;
 }
 .projects_content-all-projects {
   /* height: 75%; */
@@ -36,7 +40,7 @@
   place-items: center;
 }
 .project-card {
-  background-image: url("../images/nba_stats_project_screenshot.png");
+  /* background-image: url("../images/nba_stats_project_screenshot.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -96,7 +100,7 @@
   border-radius: 5px;
 }
 
-@media (hover) {
+/* @media (hover) {
   .project-card-content h2::after {
     transform: scaleX(0);
   }
@@ -109,4 +113,4 @@
   .project-card-content {
     transform: translateY(75%);
   }
-}
+} */
