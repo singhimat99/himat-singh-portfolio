@@ -19,6 +19,7 @@ export default function Projects() {
                 imageUrl={project.imageUrl}
                 title={project.title}
                 description={project.description}
+                toolsUsed={project.toolsUsed}
               />
             );
           })}
