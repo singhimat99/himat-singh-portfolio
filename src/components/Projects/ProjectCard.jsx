@@ -5,11 +5,14 @@ export default function ProjectCard({
   title,
   description,
   toolsUsed,
+  links,
 }) {
   return (
     <>
       <div className="project-card">
-        <img src={imageUrl} alt="NBA stats Project Image" />
+        <div className="project-card_img">
+          <img src={imageUrl} alt="NBA stats Project Image" />
+        </div>
         <div className="project-card-content">
           <h2>{title}</h2>
           <p>{description}</p>
@@ -23,8 +26,12 @@ export default function ProjectCard({
             })}
           </div>
           <div className="project-buttons">
-            <a href="#">CODE</a>
-            <a href="#">LIVE</a>
+            <a href={links.github} target="_blank">
+              CODE
+            </a>
+            <a href={links.live} target="_blank">
+              LIVE
+            </a>
           </div>
         </div>
       </div>

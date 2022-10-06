@@ -40,8 +40,8 @@ export default function Navbar() {
         <Link
           to="projects"
           smooth={true}
-          offset={200}
-          duration={500}
+          offset={-70}
+          duration={700}
           id="nav-item-link"
           onClick={showNavbar}
         >
@@ -51,7 +51,7 @@ export default function Navbar() {
           to="contact"
           smooth={true}
           offset={200}
-          duration={500}
+          duration={700}
           id="nav-item-link"
           onClick={showNavbar}
         >

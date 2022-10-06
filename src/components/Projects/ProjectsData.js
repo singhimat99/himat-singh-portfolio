@@ -10,8 +10,8 @@ export const projectsData = [
     imageUrl: nbaStatsProjectImage,
     toolsUsed: ["HTML", "CSS", "JAVASCRIPT", "API", "GIT"],
     links: {
-      github: "",
-      live: "",
+      github: "https://github.com/singhimat99/nba-statistics",
+      live: "https://631ad32784fe1d6d9f4a64bd--nba-statistics-search.netlify.app/",
     },
   },
   {

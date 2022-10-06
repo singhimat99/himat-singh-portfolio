@@ -9,19 +9,11 @@ export default function Projects() {
       <div className="projects_content">
         <div className="projects_content-title">
           <h1>{"<Projects/>"}</h1>
-          <h3>My latest work</h3>
+          <h3>MY LATEST WORK</h3>
         </div>
         <div className="projects_content-all-projects">
           {projectsData.map((project) => {
-            return (
-              <ProjectCard
-                key={project.id}
-                imageUrl={project.imageUrl}
-                title={project.title}
-                description={project.description}
-                toolsUsed={project.toolsUsed}
-              />
-            );
+            return <ProjectCard key={project.id} {...project} />;
           })}
         </div>
       </div>

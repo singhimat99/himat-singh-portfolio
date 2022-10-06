@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import ContactMe from "./components/ContactMe/ContactMe";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <About />
       <Projects />
       <ContactMe />
+      <Footer />
     </>
   );
 }
