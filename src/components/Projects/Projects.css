@@ -28,6 +28,7 @@
 .projects_content-title h3 {
   /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
   font-size: 3.5rem;
+  text-transform: uppercase;
   letter-spacing: 2px;
   color: #444;
   position: absolute;
@@ -71,6 +72,7 @@
 
 .project-buttons a {
   text-decoration: none;
+  text-transform: uppercase;
   padding: 0.7rem 1.5rem;
   letter-spacing: 2px;
   max-width: 17ch;

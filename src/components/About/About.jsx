@@ -3,7 +3,7 @@ import my_face_grey from "../images/my_face.jpg";
 import "./About.css";
 
 export default function About() {
-  const skills = ["HTML", "CSS", "JAVASCRIPT", "REACT", "GIT"];
+  const skills = ["html", "css", "javascript", "react", "git"];
 
   return (
     <section className="aboutpage" id="about">

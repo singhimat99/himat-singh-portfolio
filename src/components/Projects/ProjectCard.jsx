@@ -27,10 +27,10 @@ export default function ProjectCard({
           </div>
           <div className="project-buttons">
             <a href={links.github} target="_blank">
-              CODE
+              code
             </a>
             <a href={links.live} target="_blank">
-              LIVE
+              live
             </a>
           </div>
         </div>

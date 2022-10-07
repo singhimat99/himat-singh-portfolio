@@ -54,6 +54,7 @@
   margin: 2rem;
 }
 .single-skill {
+  text-transform: uppercase;
   width: fit-content;
   padding: 0.8rem 1.3rem;
   margin: 0.5rem;

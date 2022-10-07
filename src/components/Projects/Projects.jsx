@@ -9,7 +9,7 @@ export default function Projects() {
       <div className="projects_content">
         <div className="projects_content-title">
           <h1>{"<Projects/>"}</h1>
-          <h3>MY LATEST WORK</h3>
+          <h3>My Latest Work</h3>
         </div>
         <div className="projects_content-all-projects">
           {projectsData.map((project) => {
