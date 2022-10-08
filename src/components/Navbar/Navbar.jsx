@@ -25,7 +25,7 @@ export default function Navbar() {
           id="nav-item-link"
           onClick={showNavbar}
         >
-          HOME
+          home
         </Link>
         <Link
           to="about"
@@ -35,7 +35,7 @@ export default function Navbar() {
           id="nav-item-link"
           onClick={showNavbar}
         >
-          ABOUT
+          about
         </Link>
         <Link
           to="projects"
@@ -45,7 +45,7 @@ export default function Navbar() {
           id="nav-item-link"
           onClick={showNavbar}
         >
-          PROJECTS
+          projects
         </Link>
         <Link
           to="contact"
@@ -55,7 +55,7 @@ export default function Navbar() {
           id="nav-item-link"
           onClick={showNavbar}
         >
-          CONTACT
+          contact
         </Link>
         <button className="exit-btn" onClick={showNavbar}>
           <FaTimes />

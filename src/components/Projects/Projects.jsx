@@ -8,8 +8,8 @@ export default function Projects() {
     <section className="projects-page" id="projects">
       <div className="projects_content">
         <div className="projects_content-title">
-          <h1>{"<Projects/>"}</h1>
-          <h3>My Latest Work</h3>
+          <h3>{"<Projects/>"}</h3>
+          <h4>My Latest Work</h4>
         </div>
         <div className="projects_content-all-projects">
           {projectsData.map((project) => {

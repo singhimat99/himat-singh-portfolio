@@ -1,6 +1,5 @@
 .projects-page {
   min-height: 100vh;
-  background-color: #eee;
   padding-bottom: 2rem;
 }
 .projects_content {
@@ -18,21 +17,22 @@
   flex-direction: column;
   position: relative;
 }
-.projects_content-title h1 {
+.projects_content-title h3 {
   font-family: "M PLUS Code Latin", sans-serif;
   font-size: 7rem;
-  color: rgba(198, 196, 196, 0.5);
+  color: rgba(198, 196, 196, 0.71);
   letter-spacing: 5px;
   margin-bottom: 1rem;
 }
-.projects_content-title h3 {
+.projects_content-title h4 {
   /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
-  font-size: 3.5rem;
-  text-transform: uppercase;
+  font-size: 3rem;
+  text-transform: capitalize;
   letter-spacing: 2px;
   color: #444;
   position: absolute;
   bottom: 1rem;
+  left: 25%;
 }
 .projects_content-all-projects {
   width: 90%;

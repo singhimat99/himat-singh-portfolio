@@ -1,5 +1,6 @@
 .aboutpage {
   min-height: 550px;
+  background-color: #eee;
 }
 .about_content {
   width: 100%;
@@ -38,7 +39,7 @@
 .about_content-text-title h1 {
   font-family: "M PLUS Code Latin", sans-serif;
   font-size: 7rem;
-  color: rgba(198, 196, 196, 0.3);
+  color: rgba(198, 196, 196, 0.473);
   letter-spacing: 5px;
 }
 .about_content-text-title h3 {
