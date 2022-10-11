@@ -1,8 +1,33 @@
 import React from "react";
 import "./ContactMe.css";
 import { MdCall, MdEmail, MdLocationOn } from "react-icons/md";
+import emailjs from "@emailjs/browser";
 
 export default function ContactMe() {
+  const form = React.useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_4giz8m5",
+        "template_4nwbg37",
+        form.current,
+        "ThpDWhmxSJ3owe4ym"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    alert(
+      "You have successfully sent me a message! I will get back to you as soon as possible."
+    );
+    e.target.reset();
+  };
   return (
     <section className="contact-page" id="contact">
       <div className="contact-content_wrapper">
@@ -12,8 +37,7 @@ export default function ContactMe() {
         </div>
         <div className="contact-description">
           <p>
-            Feel free to contact me. Please fill out the form below and I will{" "}
-            <br />
+            Feel free to contact me. Please fill out the form below and I will
             get back to you as soon as possible.
           </p>
           <p>
@@ -22,29 +46,20 @@ export default function ContactMe() {
           </p>
         </div>
         <div className="contact-content">
-          {/* <div className="contact-info_container">
-            <div className="phone">
-              <MdCall />
-              <h4>{"+1(530) 208-7643"}</h4>
-            </div>
-            <div className="email">
-              <MdEmail />
-              <h4>singhimat99@gmail.com</h4>
-            </div>
-            <div className="location">
-              <MdLocationOn />
-              <h4>Fremont, California</h4>
-            </div>
-          </div> */}
           <div className="contact-form_container">
-            <form action="" method="post" className="contact-form">
+            <form
+              action=""
+              ref={form}
+              className="contact-form"
+              onSubmit={sendEmail}
+            >
               <div className="form-name">
                 <label htmlFor="input_name">Name:</label>
                 <input
                   required
                   placeholder="Enter Your Name"
                   type="text"
-                  name="Name"
+                  name="from_name"
                   id="input_name"
                   class="contact_form-input"
                 />
@@ -55,7 +70,7 @@ export default function ContactMe() {
                   required
                   placeholder="Enter Your Email"
                   type="email"
-                  name="Email"
+                  name="from_email"
                   id="input_email"
                   class="contact_form-input"
                 />
@@ -72,11 +87,28 @@ export default function ContactMe() {
                   id="input_message"
                 ></textarea>
               </div>
-              <button type="submit">Submit</button>
+              <input type="submit" value="Submit" className="submit-btn" />
             </form>
           </div>
         </div>
       </div>
     </section>
   );
+}
+
+{
+  /* <div className="contact-info_container">
+                    <div className="phone">
+                      <MdCall />
+                      <h4>{"+1(530) 208-7643"}</h4>
+                    </div>
+                    <div className="email">
+                      <MdEmail />
+                      <h4>singhimat99@gmail.com</h4>
+                    </div>
+                    <div className="location">
+                      <MdLocationOn />
+                      <h4>Fremont, California</h4>
+                    </div>
+                  </div> */
 }

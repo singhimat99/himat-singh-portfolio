@@ -12,6 +12,7 @@
 .projects_content-title {
   width: 100%;
   display: flex;
+  font-size: 10rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -19,14 +20,14 @@
 }
 .projects_content-title h3 {
   font-family: "M PLUS Code Latin", sans-serif;
-  font-size: 7rem;
+  font-size: 0.5em;
   color: rgba(198, 196, 196, 0.71);
   letter-spacing: 5px;
   margin-bottom: 1rem;
 }
 .projects_content-title h4 {
   /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
-  font-size: 3rem;
+  font-size: 0.2em;
   text-transform: capitalize;
   letter-spacing: 2px;
   color: #444;
@@ -87,7 +88,8 @@
 .toolsUsed {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 90%;
 }
 .project-buttons {
   display: flex;
@@ -105,5 +107,8 @@
   .project-card {
     flex-direction: column;
     align-items: center;
+  }
+  .projects_content-title {
+    font-size: 5rem;
   }
 }
