@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./ContactMe.css";
 import { MdCall, MdEmail, MdLocationOn } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 
 export default function ContactMe() {
-  const form = React.useRef();
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -61,7 +61,7 @@ export default function ContactMe() {
                   type="text"
                   name="from_name"
                   id="input_name"
-                  class="contact_form-input"
+                  className="contact_form-input"
                 />
               </div>
               <div className="form-email">
@@ -72,7 +72,7 @@ export default function ContactMe() {
                   type="email"
                   name="from_email"
                   id="input_email"
-                  class="contact_form-input"
+                  className="contact_form-input"
                 />
               </div>
               <div className="form_message">
@@ -81,7 +81,7 @@ export default function ContactMe() {
                   required=""
                   cols="30"
                   rows="10"
-                  class="contact_form-input"
+                  className="contact_form-input"
                   placeholder="Enter Your Message"
                   name="message"
                   id="input_message"
