@@ -47,22 +47,22 @@
   letter-spacing: 5px;
 }
 .about_content-text-title h3 {
-  color: #444;
+  color: black;
   font-size: 0.25em;
-  transform: translateY(-140%);
+  transform: translateY(-140%) translateX(5%);
   text-align: left;
 }
 .about_content-text-skills {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  gap: 0.5rem;
   margin: 2rem;
 }
 .single-skill {
   text-transform: uppercase;
   width: fit-content;
   padding: 0.8rem 1.3rem;
-  margin: 0.5rem;
   border-radius: 5px;
   letter-spacing: 2px;
   font-size: 0.8rem;

@@ -17,6 +17,8 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  padding-top: 1rem;
+  line-height: 0.9;
 }
 .projects_content-title h3 {
   font-family: "M PLUS Code Latin", sans-serif;
@@ -26,14 +28,16 @@
   margin-bottom: 1rem;
 }
 .projects_content-title h4 {
-  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
-  font-size: 0.2em;
-  text-transform: capitalize;
+  color: black;
+  font-size: 0.25em;
   letter-spacing: 2px;
-  color: #444;
-  position: absolute;
-  bottom: 1rem;
-  left: 25%;
+  transform: translateY(-130%) translateX(-30%);
+  text-align: left;
+}
+@media (max-width: 1000px) {
+  .projects_content-title {
+    font-size: 5rem;
+  }
 }
 .projects_content-all-projects {
   width: 60%;
@@ -44,7 +48,16 @@
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
 }
-
+@media (min-width: 1250px) {
+  .projects_content-all-projects {
+    width: 50%;
+  }
+}
+@media (min-width: 1493px) {
+  .projects_content-all-projects {
+    width: 40%;
+  }
+}
 .project-card {
   width: 100%;
   aspect-ratio: 8/5;
@@ -77,6 +90,22 @@
   letter-spacing: 3px;
   font-size: 1.1em;
 }
+@media (max-width: 500px) {
+  .view-project-btn {
+    font-size: 0.5rem;
+  }
+  .view-project-btn:hover {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1080px) {
+  .view-project-btn {
+    font-size: 2rem;
+  }
+  .view-project-btn:hover {
+    font-size: 2.2rem;
+  }
+}
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -87,9 +116,10 @@
   z-index: 1000;
 }
 .project-modal-wrapper {
-  width: 50vw;
-  aspect-ratio: 16/9;
-  background-color: #ddd;
+  width: 90vw;
+  /* aspect-ratio: 16/9; */
+  border: 2px solid black;
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: fixed;
@@ -97,6 +127,17 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
+}
+@media (min-width: 580px) {
+  .project-modal-wrapper {
+    width: 70vw;
+    aspect-ratio: 16/9;
+  }
+}
+@media (min-width: 1450px) {
+  .project-modal-wrapper {
+    width: 60vw;
+  }
 }
 .project-modal-img {
   background-size: cover;
@@ -106,39 +147,101 @@
   align-items: center;
 }
 .project-modal-img img {
-  width: 90%;
+  width: 100%;
+  border: 2px solid black;
+  box-shadow: black 0 7px 29px 0;
 }
-@media (max-width: 1000px) {
-  .projects_content-title {
-    font-size: 5rem;
+@media (max-width: 850px) {
+  .project-modal-img {
+    display: none;
   }
-}
-@media (max-width: 500px) {
-  .view-project-btn {
-    font-size: 0.5rem;
-  }
-  .view-project-btn:hover {
-    font-size: 0.7rem;
+  .project-modal-wrapper {
+    grid-template-columns: 1fr;
   }
 }
-@media (min-width: 980px) {
-  .view-project-btn {
-    font-size: 2rem;
-  }
-  .view-project-btn:hover {
-    font-size: 2.2rem;
-  }
+.project-modal-content {
+  padding: 1rem;
+  position: relative;
 }
-@media (min-width: 1250px) {
-  .projects_content-all-projects {
-    width: 50%;
-  }
+.project-modal-content h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
 }
-@media (min-width: 1493px) {
-  .projects_content-all-projects {
-    width: 40%;
-  }
-} /* .project-card {
+.project-modal-content h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.project-modal-content h5 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.modal-links {
+  display: flex;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.modal-links a {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+}
+.modal-links a:hover {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+}
+.modal-about-content {
+  border: 1px solid black;
+  overflow: auto;
+  height: 45%;
+  padding: 0.5rem;
+}
+.project-modal-content button {
+  position: absolute;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  font-size: 1rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.project-modal-content button:hover {
+  background-color: black;
+  color: white;
+  width: 2.2rem;
+}
+.modal-toolsUsed {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+.single-tool {
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 0.8rem 1.3rem;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+  color: black;
+  background-color: rgb(210, 210, 210);
+}
+
+/* .project-card {
       display: flex;
       justify-content: center;
       gap: 1rem;

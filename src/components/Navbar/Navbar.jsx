@@ -50,7 +50,7 @@ export default function Navbar() {
         <Link
           to="contact"
           smooth={true}
-          offset={200}
+          offset={-70}
           duration={700}
           id="nav-item-link"
           onClick={showNavbar}
