@@ -92,18 +92,18 @@
 }
 @media (max-width: 500px) {
   .view-project-btn {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .view-project-btn:hover {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 1080px) {
   .view-project-btn {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .view-project-btn:hover {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 }
 .modal-overlay {
